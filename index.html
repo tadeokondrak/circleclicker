@@ -31,8 +31,6 @@
         margin-left: -100px;
         -webkit-transition: linear 0.01s; /* For Safari 3.1 to 6.0 */
         transition: linear 0.01s;
-        text-align: center;
-        font-size: 3em;
       }
       .circle:hover {
       	background-color: #d2d2d2;
@@ -44,11 +42,15 @@
       	margin-top: -110px;
         margin-left: -110px;
       }
+      .circle #count{
+        text-align: center;
+        font-size: 5em;
+      }
     </style>
     
   </head>
   <body>
-    <div class="circle">0</div>
+    <div class="circle"><span id="count">0</span></div>
     <script src="/js/jquery/min.js"></script>
     <script src="/js/bootstrap/min.js"></script>
   </body>
