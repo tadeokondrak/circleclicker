@@ -16,14 +16,14 @@
     <!-- Temporary code - TODO: put into own file -->
     <script>
       var clicks = 0;
-      $(".circle").click(function(){clicks += 1; refreshClicks();})
+      $("#circle").click(function(){clicks += 1; refreshClicks();})
       function refreshClicks() {
         $("#count").html(clicks)
       }
     </script>
     <!-- Temporary style code - TODO: put into own file -->
     <style>
-      .circle {
+      #circle {
         cursor: pointer;
         border-radius: 50%;
         width: 200px;
@@ -38,17 +38,17 @@
         transition: ease 0.1s;
         text-align: center;
       }
-      .circle:hover {
+      #circle:hover {
       	background-color: #d2d2d2;
       }
-      .circle:active {
+      #circle:active {
         width: 220px;
       	height: 220px; 
       	background-color: #dfdfdf;
       	margin-top: -110px;
         margin-left: -110px;
       }
-      .circle #count{
+      #circle #count{
          position: fixed;
          top: 50%;
          left: 50%;
@@ -62,7 +62,7 @@
     
   </head>
   <body>
-    <div class="circle"><span id="count">0</span></div>
+    <div id="circle"><span id="count">0</span></div>
     <script src="js/jquery/min.js"></script>
     <script src="js/bootstrap/min.js"></script>
   </body>
