@@ -22,7 +22,7 @@
             $("#count").html(clicks)
           }
       $(function() {
-        $('#circle').textfill({ maxFontPixels: 36 });
+        $('#circle').textfill({maxFontPixels: -1, innerTag: "span"});
         $("#circle").click(function(){clicks += 1; refreshClicks();})
       });
     </script>
