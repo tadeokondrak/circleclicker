@@ -15,11 +15,13 @@
     <![endif]-->
     <!-- Temporary code - TODO: put into own file -->
     <script>
-      var clicks = 0;
-      $("#circle").click(function(){clicks += 1; refreshClicks();})
-      function refreshClicks() {
-        $("#count").html(clicks)
-      }
+      $(function() {
+        var clicks = 0;
+        $("#circle").click(function(){clicks += 1; refreshClicks();})
+        function refreshClicks() {
+          $("#count").html(clicks)
+        }
+      });
     </script>
     <!-- Temporary style code - TODO: put into own file -->
     <style>
