@@ -26,6 +26,11 @@
     </script>
     <!-- Temporary style code - TODO: put into own file -->
     <style>
+      body {
+      	-moz-user-select: none;
+          -webkit-user-select: none;
+          -ms-user-select: none;
+      }
       #circle {
         cursor: pointer;
         border-radius: 50%;
@@ -57,9 +62,7 @@
          left: 50%;
          transform: translate(-50%, -50%);
          font-size: 5em;
-         -moz-user-select: none;
-          -webkit-user-select: none;
-          -ms-user-select: none;
+         
       }
       #storeItem {
         width:256px;
