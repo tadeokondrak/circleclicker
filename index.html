@@ -73,10 +73,13 @@
 	padding-left: 66px;
 	background-image: url("http://placehold.it/64");
 	background-repeat: no-repeat;
-
+	z-index: 0;
       }
       #storeItem:hover {
       	background-color: #d2d2d2;
+      }
+      #storeItemText {
+z-index:2;
       }
       #store {
       	float: right;
@@ -117,7 +120,8 @@
       	right: 0;
       	margin-top: -40px;
       	position:fixed;
-      	color: dfdfdf;
+      	color: #cbcbcb;
+      	z-index: 1;
       }
     </style>
     
@@ -132,9 +136,9 @@
     </div>
     <div id="circle"><span id="count">0</span></div>
     <div id="store">
-    <div id="storeItem">First Upgrade - 5 clicks<div id="qty">0</div></div>
-    <div id="storeItem">Second Upgrade - 10 clicks<div id="qty">0</div></div>
-    <div id="storeItem">Third Upgrade - 20 clicks<div id="qty">0</div></div>
+    <div id="storeItem"><div id="storeItemText">First Upgrade - 5 clicks</div><div id="qty">0</div></div>
+    <div id="storeItem"><div id="storeItemText">Second Upgrade - 10 clicks</div><div id="qty">0</div></div>
+    <div id="storeItem"><div id="storeItemText">Third Upgrade - 20 clicks</div><div id="qty">0</div></div>
     <div id="footer">Made by <a href="http://tadeokondrak.com">Tadeo Kondrak</a> - <a href="https://github.com/TadeoKondrak/circleclicker/">Github Repository</a></div>
     </div>
   </body>
