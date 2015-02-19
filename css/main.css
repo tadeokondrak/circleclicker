@@ -1,0 +1,107 @@
+body {
+-moz-user-select:none;
+-webkit-user-select:none;
+-ms-user-select:none;
+}
+
+#circle {
+cursor:pointer;
+border-radius:50%;
+width:200px;
+height:200px;
+background-color:#dfdfdf;
+position:absolute;
+top:50%;
+left:50%;
+margin-top:-100px;
+margin-left:-100px;
+-webkit-transition:ease .1s;
+transition:ease .1s;
+text-align:center;
+}
+
+#circle:active {
+width:220px;
+height:220px;
+background-color:#dfdfdf;
+margin-top:-110px;
+margin-left:-110px;
+}
+
+#circle #count {
+position:fixed;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+font-size:5em;
+}
+
+#storeItem {
+width:256px;
+height:64px;
+background-color:#dfdfdf;
+border-radius:5px;
+margin-top:2px;
+padding-left:66px;
+background-image:url(http://placehold.it/64);
+background-repeat:no-repeat;
+z-index:0;
+}
+
+#storeItemText {
+z-index:2;
+position:relative;
+}
+
+#store {
+float:right;
+}
+
+#leftMenu {
+position:fixed;
+display:inline-block;
+margin-top:5px;
+margin-left:5px;
+background-color:#dfdfdf;
+border-radius:5px;
+}
+
+#name {
+font-size:2em;
+margin:5px;
+}
+
+#clicksPerSecond {
+font-size:1.5em;
+margin:5px;
+}
+
+#leftListItem {
+font-size:1em;
+margin:5px;
+}
+
+#footer {
+position:fixed;
+bottom:2px;
+left:2px;
+background-color:#dfdfdf;
+border-radius:5px;
+margin-bottom:2px;
+margin-left:2px;
+padding:5px;
+}
+
+#qty {
+font-size:5em;
+text-align:right;
+right:0;
+margin-top:-40px;
+position:fixed;
+color:#cbcbcb;
+z-index:1;
+}
+
+#circle:hover,#storeItem:hover {
+background-color:#d2d2d2;
+}
