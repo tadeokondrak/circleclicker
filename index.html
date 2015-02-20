@@ -29,7 +29,7 @@
             };
             var Game = {
                 cps: 0,
-                upgradePrices: [5,10,15],
+                upgradePrice: [5,10,15],
             }
         }
 
@@ -43,8 +43,12 @@
         function updateView() {
             $("#count").html(game.clicks);
             $("#cps").html(Game.cps);
-            
-            
+            $("#price0").html(Game.upgradePrice[0]);
+            $("#price1").html(Game.upgradePrice[1]);
+            $("#price2").html(Game.upgradePrice[2]);
+            $("#qty0").html(Game.upgrades[0]);
+            $("#qty1").html(Game.upgrades[1]);
+            $("#qty2").html(Game.upgrades[2]);
         }
         $(function() {
             $("#circle").click(function() {
@@ -58,7 +62,7 @@
 <body>
     <div id="leftMenu">
         <h1 id="name">Circle Clicker</h1>
-        <h2 id="clicksPerSecond">CPS: <span id="cps">0</span></h2>
+        <h2 id="clicksPerSecond">CPS: <span id="cps">Loading...</span></h2>
         <h3 id="leftListItem"><a href="javascript:;">Export Save</a></h3>
         <h3 id="leftListItem"><a href="javascript:;">Import Save</a></h3>
         <h3 id="leftListItem"><a href="javascript:;">Wipe Save</a></h3>
@@ -67,16 +71,16 @@
     </div>
     <div id="store">
         <div id="storeItem">
-            <div id="storeItemText">First Upgrade - <span id="price"5 clicks</div>
-            <div id="qty">0</div>
+            <div id="storeItemText">First Upgrade - <span id="price0">Loading...</span> clicks</div>
+            <div id="qty0">Loading...</div>
         </div>
         <div id="storeItem">
-            <div id="storeItemText">Second Upgrade - <span id="price"10 clicks</div>
-            <div id="qty">0</div>
+            <div id="storeItemText">Second Upgrade - <span id="price1">Loading...</span> clicks</div>
+            <div id="qty1">Loading...</div>
         </div>
         <div id="storeItem">
-            <div id="storeItemText">Third Upgrade - <span id="price"20 clicks</div>
-            <div id="qty">0</div>
+            <div id="storeItemText">Third Upgrade - <span id="price2">Loading...</span> clicks</div>
+            <div id="qty2">Loading...</div>
         </div>
         <div id="footer">Made by <a href="http://tadeokondrak.com">Tadeo Kondrak</a> - <a href="https://github.com/TadeoKondrak/circleclicker/">Github Repository</a>
         </div>
