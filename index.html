@@ -23,8 +23,10 @@
         if (localStorage.save) {
             var game = JSON.parse(atob(localStorage.save));
             var Game = {
-                cps: 0,
-                upgradePrice: [5,10,15],
+                cps: function(){
+                    
+                },
+                upgradePrice: [15,100,500,2000,7000,50000,1000000,100000000]
             }
         } else {
             var game = {
@@ -33,7 +35,7 @@
             };
             var Game = {
                 cps: 0,
-                upgradePrice: [5,10,15],
+                upgradePrice: [15,100,500,2000,7000,50000,1000000,100000000]
             }
         }
         function saveGame() {
@@ -110,6 +112,27 @@
             <div id="storeItemText">Third Upgrade - <span id="price2">Loading...</span> clicks</div>
             <div class="qty" id="qty2">-</div>
         </div>
+        <div id="storeItem">
+            <div id="storeItemText">Fourth Upgrade - <span id="price3">Loading...</span> clicks</div>
+            <div class="qty" id="qty3">-</div>
+        </div>
+        <div id="storeItem">
+            <div id="storeItemText">Fifth Upgrade - <span id="price4">Loading...</span> clicks</div>
+            <div class="qty" id="qty4">-</div>
+        </div>
+        <div id="storeItem">
+            <div id="storeItemText">Sixth Upgrade - <span id="price5">Loading...</span> clicks</div>
+            <div class="qty" id="qty5">-</div>
+        </div>
+        <div id="storeItem">
+            <div id="storeItemText">Seventh Upgrade - <span id="price6">Loading...</span> clicks</div>
+            <div class="qty" id="qty6">-</div>
+        </div>
+        <div id="storeItem">
+            <div id="storeItemText">Eighth Upgrade - <span id="price7">Loading...</span> clicks</div>
+            <div class="qty" id="qty7">-</div>
+        </div>
+        
         <div id="footer">Made by <a href="http://tadeokondrak.com">Tadeo Kondrak</a> - <a href="https://github.com/TadeoKondrak/circleclicker/">Github Repository</a>
         </div>
     </div>
