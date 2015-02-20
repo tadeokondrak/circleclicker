@@ -61,7 +61,7 @@
             $("#circle").click(function() {
                 game.clicks += 1;
                 updateView();
-            })
+            });
         });
         function exportSave() {
             prompt('This is your save. Keep it.', btoa(JSON.stringify(game)));
@@ -91,9 +91,9 @@
     <div id="leftMenu">
         <h1 id="name">Circle Clicker</h1>
         <h2 id="clicksPerSecond">CPS: <span id="cps">Loading...</span></h2>
-        <h3 id="leftListItem"><a href="javascript:;">Export Save</a></h3>
-        <h3 id="leftListItem"><a href="javascript:;">Import Save</a></h3>
-        <h3 id="leftListItem"><a href="javascript:;">Wipe Save</a></h3>
+        <h3 id="leftListItem"><a href="javascript:;" onclick="exportSave()">Export Save</a></h3>
+        <h3 id="leftListItem"><a href="javascript:;" onclick="importSave()">Import Save</a></h3>
+        <h3 id="leftListItem"><a href="javascript:;" onclick="wipeSave()">Wipe Save</a></h3>
     </div>
     <div id="circle"><span id="count">0</span>
     </div>
