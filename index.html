@@ -22,6 +22,10 @@
         // load save / start new game 
         if (localStorage.save) {
             var game = JSON.parse(atob(localStorage.save));
+            var Game = {
+                cps: 0,
+                upgradePrice: [5,10,15],
+            }
         } else {
             var game = {
                 clicks: 0,
@@ -31,6 +35,9 @@
                 cps: 0,
                 upgradePrice: [5,10,15],
             }
+        }
+        function saveGame() {
+            localStorage.save = btoa(JSON.stringify(game));
         }
 
         function gameLoop() {
