@@ -40,7 +40,7 @@
             saveGame();
         }
         function buyUpgrade(x) {
-            if game.clicks >= game.upgradePrice[x] {
+            if(game.clicks >= game.upgradePrice[x]) {
                 game.clicks -= game.upgradePrice[x];
                 game.upgradePrice[x] = Math.ceil(game.upgradePrice[x] * 1.1)
             }
