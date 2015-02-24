@@ -52,7 +52,7 @@
 
         function updateView() {
             $("#count").html(Math.round(game.clicks));
-            $("#cps").html(game.cps);
+            $("#cps").html((Math.round(game.cps * 10) / 10).toFixed(1));
             $("#price0").html(game.upgradePrice[0]);
             $("#price1").html(game.upgradePrice[1]);
             $("#price2").html(game.upgradePrice[2]);
