@@ -36,7 +36,7 @@ transform:translate(-50%,-50%);
 font-size:5em;
 }
 
-#storeItem {
+#storeItem,#storeItemDisabled {
 width:320px;
 height:64px;
 background-color:#dfdfdf;
@@ -102,6 +102,6 @@ color:#cbcbcb;
 z-index:1;
 }
 
-#circle:hover,#storeItem:hover {
-background-color:#d2d2d2;
+#circle:hover,#storeItem:hover,#storeItemDisabled {
+background-color:#d2d2d2 !important;
 }
