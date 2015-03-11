@@ -37,15 +37,13 @@ font-size:5em;
 }
 
 #storeItem,#storeItemDisabled {
-width:320px;
+width:300px;
 height:64px;
 background-color:#dfdfdf;
 border-radius:5px;
 margin-top:2px;
-padding-left:66px;
-background-image:url(http://placehold.it/64);
-background-repeat:no-repeat;
 z-index:0;
+padding-left: 2px;
 }
 
 #storeItemText {
