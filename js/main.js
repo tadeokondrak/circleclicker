@@ -52,7 +52,12 @@
  }
  $(function() {
      $("#circle").click(function() {
+      if(game.cps>4){
+         game.clicks += game.cps / 4;
+      }
+      else{
          game.clicks += 1;
+      }
          updateView();
      });
  });
