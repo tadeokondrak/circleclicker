@@ -87,3 +87,6 @@ z-index:1;
     padding:1rem;
     text-align: center;
 }
+#storeItem:active,#storeItemDisabled {
+background-color:#d2d2d2 !important;
+}
