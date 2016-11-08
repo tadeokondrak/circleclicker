@@ -31,7 +31,7 @@
  var gameLoopInterval = setInterval(gameLoop, 1000);
 
  function updateView() {
-     $("#count").html(Math.round(game.clicks));
+     $("#count").html(Math.round(game.clicks).toLocaleString());
      $("#cps").html((Math.round(game.cps * 10) / 10).toFixed(1));
      $("#price0").html(game.upgradePrice[0]);
      $("#price1").html(game.upgradePrice[1]);
