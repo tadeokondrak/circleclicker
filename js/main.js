@@ -32,23 +32,23 @@
 
  function updateView() {
      $("#count").html(Math.round(game.clicks).toLocaleString());
-     $("#cps").html((Math.round(game.cps * 10) / 10).toFixed(1));
-     $("#price0").html(game.upgradePrice[0]);
-     $("#price1").html(game.upgradePrice[1]);
-     $("#price2").html(game.upgradePrice[2]);
-     $("#price3").html(game.upgradePrice[3]);
-     $("#price4").html(game.upgradePrice[4]);
-     $("#price5").html(game.upgradePrice[5]);
-     $("#price6").html(game.upgradePrice[6]);
-     $("#price7").html(game.upgradePrice[7]);
-     $("#qty0").html(game.upgrades[0]);
-     $("#qty1").html(game.upgrades[1]);
-     $("#qty2").html(game.upgrades[2]);
-     $("#qty3").html(game.upgrades[3]);
-     $("#qty4").html(game.upgrades[4]);
-     $("#qty5").html(game.upgrades[5]);
-     $("#qty6").html(game.upgrades[6]);
-     $("#qty7").html(game.upgrades[7]);
+     $("#cps").html((Math.round(game.cps * 10) / 10).toFixed(1).toLocaleString());
+     $("#price0").html(game.upgradePrice[0].toLocaleString());
+     $("#price1").html(game.upgradePrice[1].toLocaleString());
+     $("#price2").html(game.upgradePrice[2].toLocaleString());
+     $("#price3").html(game.upgradePrice[3].toLocaleString());
+     $("#price4").html(game.upgradePrice[4].toLocaleString());
+     $("#price5").html(game.upgradePrice[5].toLocaleString());
+     $("#price6").html(game.upgradePrice[6].toLocaleString());
+     $("#price7").html(game.upgradePrice[7].toLocaleString());
+     $("#qty0").html(game.upgrades[0].toLocaleString());
+     $("#qty1").html(game.upgrades[1].toLocaleString());
+     $("#qty2").html(game.upgrades[2].toLocaleString());
+     $("#qty3").html(game.upgrades[3].toLocaleString());
+     $("#qty4").html(game.upgrades[4].toLocaleString());
+     $("#qty5").html(game.upgrades[5].toLocaleString());
+     $("#qty6").html(game.upgrades[6].toLocaleString());
+     $("#qty7").html(game.upgrades[7].toLocaleString());
  }
  $(function() {
      $("#circle").click(function() {
